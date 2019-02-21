@@ -6,7 +6,21 @@ title: Home
 <div class="home">
   <div class="post-list">
 
-    {% for post in site.posts limit:5%}
+      <article class="post_card post summary-highlight">
+          <header class="post_header">
+              <h2 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h2>
+          </header>
+          <div class="post_excerpt">
+            <p>
+              Welcome to Azure Data Explorer / Kusto Development blog.
+            </p> 
+            <p>
+                Sharing our experience and assets  to help the adoption of this powerful technology.
+            </p> 
+          </div>
+        </article>
+        <hr/>
+    {% for post in site.posts limit:10%}
 
     <article class="post_card post">
       <header class="post_header">
